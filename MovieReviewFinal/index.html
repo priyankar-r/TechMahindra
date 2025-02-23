@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flick Fusion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="flickfusion-high-resolution-logo (1).png" alt="Flick Fusion Logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="https://www.imdb.com/trailers/?ref_=nv_mv_tr" id="nav-search">Latest Trailers</a>
+            <a href="https://www.quodb.com/" id="nav-reviews">Search Quotes</a>
+            <a href="https://www.imdb.com/news/movie/?ref_=nv_nw_mv" id="nav-details">Movie News</a>
+            <a href="https://moviedecider.com/" id="nav-details">Pick A Movie For Me</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Movies...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <iframe src="https://www.youtube.com/embed/nsC5PhXS19Y" class="d-block w-100" allowfullscreen></iframe>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chhaava</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/1IIifCYwTGc?si=dMVZBrhn2BbRC06j" class="d-block w-100" allowfullscreen></iframe>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>MR.X</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/PFRwl7FP4Lg" class="d-block w-100" allowfullscreen></iframe>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kadhalikka Neramillai</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <h1 class="section-title">🔥 Top Movies This Week</h1>
+    
+        <div class="movies-container">
+            <!-- Movie 1 -->
+            <div class="movie-card">
+                <img src="https://cdn.cinematerial.com/p/297x/0qx3wadw/kottukkaali-indian-movie-poster-md.jpg?v=1708286090" alt="Movie 1">
+                <h3>Kottukkaali</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/FwIScvUQwIk?si=ZG_bu18rzujkqHq9" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Kottukkali.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>
+    
+            <!-- Movie 2 -->
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTAzMGQ2MGItMjk5OC00YWIwLThmMjUtYmNjMTIxNzVlZWQ4XkEyXkFqcGc@._V1_.jpg" alt="Movie 2">
+                <h3>Amaran</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/hylIXfZeB4c?si=7kXg4cSvFRNWYLUJ" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Amaran.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>
+    
+            <!-- Movie 3 -->
+            <div class="movie-card">
+                <img src="https://imgix.hoyts.com.au/mx/posters/au/article-370-db6584ae.jpg" alt="Article 370">
+                <h3>Article370</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/6Pf6RUmq7S0?si=noiY6JJtZAx9fRPY" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Article370.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="movie-card">
+                <img src="https://www.cinejosh.com/newsimg/newsmainimg/dulquer-salmaan-lucky-baskhar-first-look-out_b_0302240544.jpg" alt="Movie 2">
+                <h3>Lucky Baskhar</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/Kv5RKsqVe-Y?si=77Rylp46QdD3Tpbx" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="LuckyBasker.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>            
+            <!-- Movie 5 -->
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BZGE4Y2Q5MzAtY2FlYS00M2ZiLWJlMjMtOWNhMzMwYjU2Y2UwXkEyXkFqcGc@._V1_.jpg" alt="Movie 2">
+                <h3>Maharaja</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/n3ttNeXKPHg?si=-NWRv3eL4FYWV3oI" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Maharaja.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>   
+            <!-- Movie 6 -->
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/original/bswrtewwthpsh6nABiqKevU4UBI.jpg" alt="Movie 2">
+                <h3>Manjummel Boys</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/id848Ww1YLo?si=7GAlZA6DWr9G1PCv" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="ManjummelBoys.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>   
+            <!-- Movie 7 -->
+            <div class="movie-card">
+                <img src="https://assets.voxcinemas.com/posters/P_HO00011470_1725544027808.jpg" alt="Movie 2">
+                <h3>Meiyazhagan</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/Ahp840_aCoI?si=E8gJj8dFuS-z3J73" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Meiyazhagan.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>  
+            <!-- Movie 8 -->
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/original/1PVrVLt7WkiOvb0HdbtVa93nU4T.jpg" alt="Movie 2">
+                <h3>Premalu</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/XRz_K-pzXOI?si=JKmIMvXK_J9nmCgq" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Premalu.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>   
+            <!-- Movie 9 -->
+            <div class="movie-card">
+                <img src="https://images.filmibeat.com/ph-big/2024/11/everything-you-need-to-know-about-nazriya-nazim-basil-joseph-sookshmadarshini-movie1731906219_0.jpg" alt="Movie 2">
+                <h3>Sookshmadarshini</h3>
+                <div class="buttons">
+                    <a href="https://youtu.be/IrkfzvO9LkE?si=vXGYiBiGXhy627NR" class="trailer-btn" target="_blank">🎬 Watch Trailer</a>
+                    <a href="Sookshma darshini.html" class="details-btn">🔗 Review</a>
+                </div>
+            </div>                                                                
+        </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 FlickFusion. All rights reserved.</p>
+    </footer>
+</body>
+</html>
