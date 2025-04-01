@@ -1,0 +1,152 @@
+.pet-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  background-color: #F7DBA7;
+}
+
+@media (max-width: 1024px) {
+  .pet-container {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .pet-container {
+      grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+  .pet-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pet-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the frame without distortion */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }  
+  
+  .pet-info {
+    padding: 15px;
+  }
+  
+  .pet-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .pet-age {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .adopt-button {
+    background: #c57b57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .adopt-button:hover {
+    background: #be6539;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.show {
+    display: flex;
+  }
+  
+  .modal-content {
+    background: #F7DBA7;;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    max-width: 320px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+  }
+  
+  .filter-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    white-space: nowrap;
+  }
+  
+  .filter-select {
+    flex-grow: 1;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .filter-select:hover {
+    border-color: #be6539;
+  }
+  
+  .filter-select:focus {
+    outline: none;
+    border-color: #c57b57;
+    box-shadow: 0 0 6px rgba(51, 113, 179, 0.5);
+  }
+  
+  /* Footer */
+footer {
+  background-color: #041f1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+<div class="adoption-requests">
+    <h2>Adoption Requests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Pet Name</th>
+          <th>Adopter Name</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let request of adoptionRequests; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ request.petName }}</td>
+          <td>{{ request.adopterName }}</td>
+          <td>{{ request.adopterEmail }}</td>
+          <td>{{ request.message }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+        <p>© 2025 Petify. All Rights Reserved.</p>
+      </footer>
+  </div>
+  

@@ -1,0 +1,14 @@
+<div class="toy-container">
+  <div class="toy-card" *ngFor="let toy of toys">
+    <img [src]="toy.image" alt="{{ toy.name }}" class="toy-image">
+    <div class="toy-info">
+      <h3 class="toy-name">{{ toy.name }}</h3>
+      <p class="toy-description">{{ toy.description }}</p>
+      <h4 class="toy-price">₹{{ toy.price | number }}</h4>
+      <button class="buy-button" (click)="buyToy(toy)">Buy Now</button>
+    </div>
+  </div>
+</div>
+<div><footer>
+  <p>© 2025 Petify. All Rights Reserved.</p>
+</footer></div>

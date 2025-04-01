@@ -1,0 +1,42 @@
+<body>
+  <div class="main-content">
+    <div class="cart-container">
+      <div *ngIf="cartItems.length === 0; else cartContent">
+        <p class="empty-cart-message">🛒 Your cart is empty!</p>
+      </div>
+
+      <ng-template #cartContent>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cartItem of cartItems; let i = index">
+              <td>
+                <input type="checkbox" (change)="updateSelectedTotal(cartItem, $event)" />
+              </td>
+              <td>
+                <img [src]="cartItem.item.image" alt="{{ cartItem.item.name }}" class="cart-item-image" />
+              </td>
+              <td>{{ cartItem.item.name }}</td>
+              <td>₹{{ cartItem.item.price }}</td>
+              <td>{{ cartItem.quantity }}</td>
+              <td>₹{{ (cartItem.item.price * cartItem.quantity).toFixed(2) }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Total: ₹{{ selectedTotal.toFixed(2) }}</h3>
+      </ng-template>
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 Petify. All Rights Reserved.</p>
+  </footer>
+</body>

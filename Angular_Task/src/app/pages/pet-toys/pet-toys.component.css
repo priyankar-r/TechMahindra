@@ -1,0 +1,80 @@
+/* Container Styling */
+ .toy-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Forces exactly 4 columns */
+  gap: 20px;
+  padding: 20px;
+  background-color: #F7DBA7;
+  }
+  
+  /* Card Styling */
+  .pet-card, .toy-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pet-card:hover, .toy-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image Styling */
+  .pet-image, .toy-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+  }
+  
+  /* Info Section */
+  .pet-info, .toy-info {
+    padding: 15px;
+  }
+  
+  .pet-name, .toy-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .toy-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .toy-price {
+    font-size: 1rem;
+    color: #b31e04;
+  }
+  
+  /* Button Styling */
+  .adopt-button, .buy-button {
+    display: inline-block;
+    background: #c57b57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .adopt-button:hover, .buy-button:hover {
+    background: #be6539;
+  }
+
+/* Footer */
+footer {
+  background-color: #041f1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+  

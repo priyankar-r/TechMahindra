@@ -1,0 +1,36 @@
+<div class="filter-container">
+  <label for="petType" class="filter-label">Filter by Type:</label>
+  <select id="petType" class="filter-select" [(ngModel)]="petType">
+    <option value="All">All</option>
+    <option value="Dog">Dog</option>
+    <option value="Cat">Cat</option>
+    <option value="Chinchilla">Chinchilla</option>
+    <option value="Hamster">Hamster</option>
+    <option value="Bird">Bird</option>
+    <option value="Rabbit">Rabbit</option>
+  </select>
+</div>
+
+<div class="pet-container">
+  <div class="pet-card" *ngFor="let pet of pets | petFilter:petType">
+    <img [src]="pet.image" alt="{{ pet.name }}" class="pet-image">
+    <div class="pet-info">
+      <h3 class="pet-name">{{ pet.name }}</h3>
+      <p class="pet-age">Age: {{ pet.age }}</p>
+      <p class="pet-description">{{ pet.description }}</p>
+      <button class="adopt-button" (click)="openAdoptionForm(pet)">Adopt Me</button>
+    </div>
+  </div>
+</div>
+
+<!-- Adoption Form Modal -->
+<div class="modal" [class.show]="isFormOpen">
+  <div class="modal-content">
+    <span class="close" (click)="closeAdoptionForm()">&times;</span>
+    <app-adoption-form *ngIf="selectedPet" [pet]="selectedPet"></app-adoption-form>
+  </div>
+</div>
+
+<div><footer>
+  <p>© 2025 Petify. All Rights Reserved.</p>
+</footer></div>

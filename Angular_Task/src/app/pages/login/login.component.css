@@ -1,0 +1,46 @@
+/* Center the login card */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #F7DBA7; /* Light gray background */
+  }
+  
+  /* Card styling */
+  .card {
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F1AB86;
+  }
+  
+  /* Center title */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input field styling */
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background-color: #c57b57;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #be6539;
+  }
+  
